@@ -65,6 +65,9 @@ const Player = ({ currentSong, nextSong, previousSong, setTab }) => {
             },
           }}
         />
+        <div className="flex justify-center mt-2 text-2xl">
+          {currentSong.title} • {currentSong.artist}
+        </div>
       </div>
 
       <button onClick={() => setTab((a) => (a === -2 ? -1 : -2))}>
